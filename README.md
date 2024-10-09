@@ -1,14 +1,36 @@
-Simple and Efficient Word Counting
+# Repeated Words Finder
 
-Word Count is a lightweight command-line tool designed to accurately count the number of words in text files. 
-Supporting various file formats, including .txt, .docx, and .pdf, this program provides a straightforward solution for writers, developers, and researchers.
+This project identifies and counts repeated words in a given text using JavaScript. The script processes a string, tracks word frequencies, and outputs a list of words that appear more than once along with their counts.
 
-Fast and Reliable Word Counting Solution
+## Features
 
-This Word Count program is built for speed and accuracy, delivering instant results for files of any size. With its intuitive interface and minimal dependencies,
-users can easily integrate this tool into their workflow, streamlining tasks and increasing productivity.
+- Counts the occurrences of each word in a text string.
+- Outputs words that are repeated, along with their frequency.
+- Ignores case sensitivity to ensure words like "This" and "this" are counted together.
 
-Count Words with Ease
+## Getting Started
 
-Word Count is a user-friendly utility for counting words in text files. Whether you're tracking word count for writing projects, 
-analyzing text data, or simply need a quick word count, this program provides a reliable and efficient solution.
+To run this project locally:
+
+### Installation
+
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/yourusername/repeated-words-finder.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd repeated-words-finder
+    ```
+3. Open `index.html` in a web browser and open the console to view the results of the script.
+
+## Usage
+
+1. Modify the `text` variable within the `<script>` tag in `index.html` to test with different input strings.
+2. Open the browser console to view the results. The script outputs an object showing repeated words and their counts.
+
+### Example
+
+For the input `"This is a test. This test is only a test."`, the output will be:
+```javascript
+{ this: 2, test: 3, is: 2, a: 2 }
